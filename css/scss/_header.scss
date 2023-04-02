@@ -1,0 +1,69 @@
+.header{
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    .menu {
+        @include flex(space-between);
+        &__item_second{
+            width: 35%;
+        }
+        &__link{
+            font-size: 1.3rem;
+            color: $color-someW;
+        }
+        &__logo{
+            display: flex;
+            align-items: center;
+            transition: $transition;
+            &:hover .menu__span_r{
+                transform: rotate(-20deg);
+                transition: $transition;
+            }
+        }
+        &__spans {
+            width: 42px;
+            display: flex;
+            flex-wrap: wrap;
+            transition: $transition;
+        }
+        &__span {
+            background-color: $color-someW;
+            width: 19px;
+            height: 19px;
+            margin: 1px;
+        }
+        &__span_r{
+            transition: $transition;
+            background-color: $color-red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 17px;
+            height: 17px;
+            margin-left: 3px;
+            margin-top: 3px;
+            color: $color-someW;
+            font-size: 8px;
+        }
+        &__main{
+            @include flex(space-between);
+        }
+    }
+    
+}
+.logo__text{
+    font-family: $ff-UnitedSansHeavy;
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-someW;
+    margin-left: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    display: flex;
+    &_span{
+        color: $color-red;
+        font-weight: 500;
+        font-family: $ff-UnitedSansHeavy;
+    }
+}

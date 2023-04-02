@@ -1,0 +1,44 @@
+.loader{
+    @extend %position-a-center;
+    @include transform(0deg);
+    width: 100%;
+    height: 100vh;
+    background: $color-loader;
+    z-index: 4;
+    border: 7px solid $color-loader;
+    animation-name: square;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+    font-weight: normal;
+    font-family: $ff-UnitedSansHeavy;
+}
+
+@media screen and (min-height:801px) {
+    @keyframes square {
+        to{
+            @include transform(75deg);
+            width: 400px;
+            height: 400px;
+            left:50%;
+            top:50%;
+            background-color: transparent;
+        }
+    }
+}
+
+@media screen and (max-height:800px) {
+    @keyframes square {
+        to{
+            @include transform(75deg);
+            width: calc(400px - ((400px/100%)*30%));
+            height: calc(400px - ((400px/100%)*30%));
+            left:50%;
+            top:50%;
+            background-color: transparent;
+            z-index: 1;
+            
+        }
+    }
+}
