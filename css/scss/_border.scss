@@ -4,10 +4,13 @@
     width: 400px;
     height: 400px;
     background: transparent;
-    border: 7px solid $color-red;
+    border: 7px solid transparent;
     z-index: 1;
     @media screen and (max-width:1390px) , (max-height:780px) {
         width: calc(400px - ((400px/100%)*30%));
         height: calc(400px - ((400px/100%)*30%));
     }
+}
+.active-border{
+    border-color: $color-red;
 }

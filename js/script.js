@@ -16,7 +16,6 @@ window.addEventListener('load' , ()=>{
         }, 700);
         setTimeout(() => {
           border.classList.add("active-border");
-          // loader.style.display = "none";
         }, 4500);
         setTimeout(() => {
           
