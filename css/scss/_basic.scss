@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:#161616;
+    color: #fff;
+    font-family:'TT Firs Neue', sans-serif;
+    position: relative;
+    overflow: hidden;
+    font-size: 2rem;
+    overflow: hidden;
+    font-weight: 500;
+    transition: $transition;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

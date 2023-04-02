@@ -1,0 +1,26 @@
+$color-red:#AE0000;
+$color-blue:#00A2E1;
+$color-backGD:#161616;
+$color-loader:$color-red;
+$color-someW:#F5F5F1;
+$transition:0.5s;
+$ff-TTFist:'TT Firs Neue';
+$ff-UnitedSansHeavy:'United Sans Heavy';
+$ff-UnitedSansLite:'United Sans Lite';
+$ff-UnitedSansBold:'United Sans Bold';
+$ff-UnitedSansBlack:'United Sans Black';
+$ff-UnitedSansMedium:'United Sans Medium';
+%position-a-center{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+@mixin transform($property){
+    transform: translate(-50% , -50%) rotate($property);
+}
+@mixin flex($j-content:center,$a-items:center,$f-direction:row) {
+    display: flex;
+    justify-content:$j-content ;
+    align-items:$a-items ;
+    flex-direction:$f-direction ;
+}

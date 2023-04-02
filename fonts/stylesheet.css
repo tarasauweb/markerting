@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'United Sans Lite';
+    src: url('UnitedSansCond-Light.eot');
+    src: url('UnitedSansCond-Light.eot?#iefix') format('embedded-opentype'),
+        url('UnitedSansCond-Light.woff2') format('woff2'),
+        url('UnitedSansCond-Light.woff') format('woff'),
+        url('UnitedSansCond-Light.ttf') format('truetype'),
+        url('UnitedSansCond-Light.svg#UnitedSansCond-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'United Sans Heavy';
+    src: url('UnitedSansCond-Heavy.eot');
+    src: url('UnitedSansCond-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('UnitedSansCond-Heavy.woff2') format('woff2'),
+        url('UnitedSansCond-Heavy.woff') format('woff'),
+        url('UnitedSansCond-Heavy.ttf') format('truetype'),
+        url('UnitedSansCond-Heavy.svg#UnitedSansCond-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'United Sans Bold';
+    src: url('UnitedSansCond-Bold.eot');
+    src: url('UnitedSansCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('UnitedSansCond-Bold.woff2') format('woff2'),
+        url('UnitedSansCond-Bold.woff') format('woff'),
+        url('UnitedSansCond-Bold.ttf') format('truetype'),
+        url('UnitedSansCond-Bold.svg#UnitedSansCond-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'United Sans Medium';
+    src: url('UnitedSansCond-Medium.eot');
+    src: url('UnitedSansCond-Medium.eot?#iefix') format('embedded-opentype'),
+        url('UnitedSansCond-Medium.woff2') format('woff2'),
+        url('UnitedSansCond-Medium.woff') format('woff'),
+        url('UnitedSansCond-Medium.ttf') format('truetype'),
+        url('UnitedSansCond-Medium.svg#UnitedSansCond-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'United Sans Black';
+    src: url('UnitedSansCond-Black.eot');
+    src: url('UnitedSansCond-Black.eot?#iefix') format('embedded-opentype'),
+        url('UnitedSansCond-Black.woff2') format('woff2'),
+        url('UnitedSansCond-Black.woff') format('woff'),
+        url('UnitedSansCond-Black.ttf') format('truetype'),
+        url('UnitedSansCond-Black.svg#UnitedSansCond-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
