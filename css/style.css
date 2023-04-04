@@ -24,6 +24,28 @@
   }
 }
 
+.my-focus .focus__subtitle, .markerting .offer__subtitle {
+  text-align: center;
+  position: absolute;
+  font-family: "TT Firs Neue";
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 100%;
+  left: 50%;
+  bottom: 7%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media screen and (max-width: 1390px) {
+  .my-focus .focus__subtitle, .markerting .offer__subtitle {
+    font-size: calc(14px + 0.8333333333vh);
+    bottom: 5%;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -86,7 +108,7 @@ a {
   font-family: "United Sans Heavy";
 }
 
-@media screen and (min-height: 781px) {
+@media screen and (min-width: 1390px), (min-height: 781px) {
   @-webkit-keyframes square {
     to {
       -webkit-transform: translate(-50%, -50%) rotate(75deg);
@@ -349,28 +371,6 @@ a {
 .markerting .offer__title span {
   color: #AE0000;
 }
-.markerting .offer__subtitle {
-  text-align: center;
-  position: absolute;
-  font-family: "TT Firs Neue";
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 20px;
-  width: 100%;
-  left: 50%;
-  bottom: 7%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-@media screen and (max-width: 1390px) {
-  .markerting .offer__subtitle {
-    font-size: calc(14px + 0.8333333333vh);
-    bottom: 5%;
-  }
-}
-
 .my-focus .focus {
   position: relative;
   display: -webkit-box;
@@ -398,7 +398,6 @@ a {
   -webkit-filter: blur(0px);
           filter: blur(0px);
 }
-
 .active-blur {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
