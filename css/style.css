@@ -112,7 +112,7 @@ a {
     }
   }
 }
-@media screen and (max-height: 780px) {
+@media screen and (max-width: 1390px), (max-height: 780px) {
   @-webkit-keyframes square {
     to {
       -webkit-transform: translate(-50%, -50%) rotate(75deg);

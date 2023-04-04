@@ -15,7 +15,7 @@
     font-family: $ff-UnitedSansHeavy;
 }
 
-@media screen and (min-height:781px) {
+@media screen and(min-width:1390px), (min-height:781px) {
     @keyframes square {
         to{
             @include transform(75deg);
@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (max-height:780px) {
+@media screen and (max-width:1390px) , (max-height:780px) {
     @keyframes square {
         to{
             @include transform(75deg);
