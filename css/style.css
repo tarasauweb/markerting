@@ -86,7 +86,7 @@ a {
   font-family: "United Sans Heavy";
 }
 
-@media screen and (min-height: 801px) {
+@media screen and (min-height: 781px) {
   @-webkit-keyframes square {
     to {
       -webkit-transform: translate(-50%, -50%) rotate(75deg);
@@ -112,7 +112,7 @@ a {
     }
   }
 }
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 780px) {
   @-webkit-keyframes square {
     to {
       -webkit-transform: translate(-50%, -50%) rotate(75deg);
@@ -122,7 +122,7 @@ a {
       left: 50%;
       top: 50%;
       background-color: transparent;
-      z-index: 1;
+      z-index: -1;
     }
   }
   @keyframes square {
@@ -134,7 +134,7 @@ a {
       left: 50%;
       top: 50%;
       background-color: transparent;
-      z-index: 1;
+      z-index: -1;
     }
   }
 }
