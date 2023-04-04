@@ -1,11 +1,9 @@
 .markerting{
-    width: 100%;
-    height: 100vh;
+    @extend %size-block;
     
     .offer{
-        position: relative;
-        width: 100%;
-        height: 100vh;
+        position: $position-relative;
+        @extend %size-block;
         @include flex($f-direction:column);
         z-index: 2;
         &__title{

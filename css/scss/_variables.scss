@@ -10,6 +10,7 @@ $ff-UnitedSansLite:'United Sans Lite';
 $ff-UnitedSansBold:'United Sans Bold';
 $ff-UnitedSansBlack:'United Sans Black';
 $ff-UnitedSansMedium:'United Sans Medium';
+$position-relative:relative;
 %position-a-center{
     position: absolute;
     top:50%;
@@ -23,4 +24,20 @@ $ff-UnitedSansMedium:'United Sans Medium';
     justify-content:$j-content ;
     align-items:$a-items ;
     flex-direction:$f-direction ;
+}
+%size-block{
+    width: 100%;
+    height: 100vh;
+}
+%h2-font{
+    font-size: 62px;
+    font-family: 'TT Firs Neue';
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: $color-someW;
+    text-align: center;
+    @media screen and (max-width:1390px) {
+        font-size: calc(45px + 17px * (100vh / 1440px));
+    }
 }

@@ -1,4 +1,5 @@
 .border{
+    transition: $transition;
     @include transform(75deg);
     @extend %position-a-center;
     width: 400px;
@@ -10,7 +11,25 @@
         width: calc(400px - ((400px/100%)*30%));
         height: calc(400px - ((400px/100%)*30%));
     }
+    
 }
 .active-border{
     border-color: $color-red;
+    z-index: -1;
+
 }
+
+.focus-border{
+    background: linear-gradient(113.31deg, #345ee98c 41.86%, #486ff1a6 54.7%);
+    @include transform(0deg);
+    border: none;
+    z-index: 1;
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+

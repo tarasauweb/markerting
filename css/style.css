@@ -4,6 +4,26 @@
   left: 50%;
 }
 
+.my-focus .focus, .my-focus, .markerting .offer, .markerting {
+  width: 100%;
+  height: 100vh;
+}
+
+.my-focus .focus__title {
+  font-size: 62px;
+  font-family: "TT Firs Neue";
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #F5F5F1;
+  text-align: center;
+}
+@media screen and (max-width: 1390px) {
+  .my-focus .focus__title {
+    font-size: calc(45px + 1.1805555556vh);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -76,6 +96,7 @@ a {
       left: 50%;
       top: 50%;
       background-color: transparent;
+      z-index: -1;
     }
   }
   @keyframes square {
@@ -87,6 +108,7 @@ a {
       left: 50%;
       top: 50%;
       background-color: transparent;
+      z-index: -1;
     }
   }
 }
@@ -236,6 +258,9 @@ a {
 }
 
 .border {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: translate(-50%, -50%) rotate(75deg);
       -ms-transform: translate(-50%, -50%) rotate(75deg);
           transform: translate(-50%, -50%) rotate(75deg);
@@ -254,16 +279,34 @@ a {
 
 .active-border {
   border-color: #AE0000;
+  z-index: -1;
 }
 
-.markerting {
-  width: 100%;
-  height: 100vh;
+.focus-border {
+  background: -o-linear-gradient(336.69deg, rgba(52, 94, 233, 0.5490196078) 41.86%, rgba(72, 111, 241, 0.6509803922) 54.7%);
+  background: linear-gradient(113.31deg, rgba(52, 94, 233, 0.5490196078) 41.86%, rgba(72, 111, 241, 0.6509803922) 54.7%);
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      -ms-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  border: none;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
+
 .markerting .offer {
   position: relative;
-  width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,4 +369,40 @@ a {
     font-size: calc(14px + 0.8333333333vh);
     bottom: 5%;
   }
+}
+
+.my-focus .focus {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+.my-focus .focus__title {
+  width: 100%;
+}
+.my-focus .focus__title:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.active-blur {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }/*# sourceMappingURL=style.css.map */

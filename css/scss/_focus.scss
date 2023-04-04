@@ -1,0 +1,23 @@
+.my-focus{
+    @extend %size-block;
+    .focus{
+        position: $position-relative;
+        @extend %size-block;
+        @include flex($f-direction:column);
+        z-index: 2;
+        &__title{
+            width: 100%;
+            @extend %h2-font;
+            &:hover{
+                transition: $transition;
+                filter: blur(0px);
+            }
+        }
+    }
+}
+
+.active-blur{
+    transition: $transition;
+    filter: blur(3px);
+}
+
